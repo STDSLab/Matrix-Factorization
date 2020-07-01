@@ -3,6 +3,42 @@ This repository provides MATLAB implementations for various Matrix Factorization
 
 ## Single Matrix Factorization Methods
 
+### ONMF
+  - X = W*H
+  - columns of W are orthogonal
+  - values of W and H are non-negative
+  
+Ding, Chris, et al. "Orthogonal nonnegative matrix t-factorizations for clustering." Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining. 2006.
+
+### OMUR
+  - X = W*H
+  - W is projected onto the Stiefel manifold
+  - values of W and H are non-negative
+  
+Choi, Seungjin. "Algorithms for orthogonal nonnegative matrix factorization." 2008 ieee international joint conference on neural networks (ieee world congress on computational intelligence). IEEE, 2008.
+
+### OAUR
+  - X = W*H
+  - orthogonality penalty on the columns of W
+  - values of W and H are non-negative
+
+Mirzal, Andri. "A convergent algorithm for orthogonal nonnegative matrix factorization." Journal of Computational and Applied Mathematics 260 (2014): 149-166.
+
+### OHALS
+  - X = W*H
+  - columns of W are orthogonal
+  - values of W and H are non-negative
+  - hierarchical ALS solution
+
+Kimura, Keigo, Yuzuru Tanaka, and Mineichi Kudo. "A fast hierarchical alternating least squares algorithm for orthogonal nonnegative matrix factorization." Asian Conference on Machine Learning. 2015.
+
+### LVNMF
+  - X = W*H
+  - columns of W are maximally different
+  - values of W and H are non-negative
+  
+Liu, Tongliang, Mingming Gong, and Dacheng Tao. "Large-cone nonnegative matrix factorization." IEEE transactions on neural networks and learning systems 28.9 (2016): 2129-2142.
+
 ## Single Matrix Tri-Factorization Methods
 
 ### Fast MtF
