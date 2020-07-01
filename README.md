@@ -18,6 +18,8 @@ Wang, Hua, et al. "Fast nonnegative matrix tri-factorization for large-scale dat
   - values of F(i) and S(i) are non-negative
   - clusters in F(i) are spatially cohesive
 
+You must convert X into a non-negative format (either through adding an offset or taking the absolute value) to use ONMTF_SCR.
+
 Bai, Zilong, et al. "Unsupervised network discovery for brain imaging data." Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. 2017.
 
 ## Group Matrix Tri-Factorization Methods
@@ -46,6 +48,3 @@ Li, Kendrick T. Group Convex Orthogonal Non-negative Matrix Tri-Factorization wi
 
 ## Matrix Tri-Factorization Details
 Use core functions (fastMtF, GLEAN, LMF, RESCAL, ONMTF_SCR) if you wish to run a single factorization on X (a set of symmetric 2D matrices). Use multi functions (multiFastMtF, multiGLEAN, multiLMF, multiRESCAL, multiONMTF_SCR) if you wish to run multiple runs using a random initialization. These functions will return the run with the smallest error and the results for all runs.
-
-## Single Matrix Factorization Details
-You must convert X into a non-negative format (either through adding an offset or taking the absolute value) to use ONMTF_SCR.
